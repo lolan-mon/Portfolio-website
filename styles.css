@@ -234,26 +234,36 @@ html {
 /* Small Screens (Mobile Portrait) */
 @media screen and (max-width: 480px) {
   header .hero h1 {
-    font-size: 2.2em; /* Reduced header font size */
+    font-size: 2.4em; /* Enhanced header font size */
+    font-weight: 700;
+    color: #2C3E50;
   }
 
   header .hero p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #34495E;
+    font-weight: 500;
   }
 
   /* Horizontal scrollable nav bar */
+  header nav {
+    background-color: #f6f1e1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
   header nav ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     overflow-x: auto;
-    padding: 10px 0;
-    gap: 10px;
-    scrollbar-width: none; /* Firefox */
+    padding: 12px 0;
+    gap: 15px;
+    scrollbar-width: none;
+    background-color: transparent;
   }
 
   header nav ul::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
   }
 
   header nav ul li {
@@ -262,13 +272,20 @@ html {
   }
 
   header nav ul li a {
-    padding: 8px 12px;
-    font-size: 1em;
+    padding: 10px 14px;
+    font-size: 1.1em;
+    background: #e3eaf0;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+  }
+
+  header nav ul li a:hover {
+    background: #cbd7e1;
   }
 
   #about {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 50px 20px;
   }
 
   .about-container {
@@ -278,38 +295,60 @@ html {
   }
 
   .about-text {
-    font-size: 1.2em;
-    line-height: 1.8;
-    padding: 10px 0;
+    font-size: 1.3em;
+    line-height: 1.9;
+    padding: 10px 15px;
+    color: #2C3E50;
+    font-weight: 500;
   }
 
   .about-image {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
   }
 
   .about-image img {
-    width: 70%;
-    max-width: 250px;
+    width: 60%;
+    max-width: 200px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  #projects {
+    padding-top: 30px;
+  }
+
+  #projects h2 {
+    font-size: 2em;
+    color: #2C3E50;
+    margin-bottom: 20px;
   }
 
   #projects .projects-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .project {
-    padding: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
   }
 
   .project h3,
   .project p {
     font-size: 1.2em;
-    line-height: 1.8;
+    line-height: 1.9;
+    color: #34495E;
   }
 
   .project-text {
@@ -318,9 +357,14 @@ html {
   }
 
   #contact form {
-    width: 90%;
+    width: 92%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
   }
 }
+
 
 
 
