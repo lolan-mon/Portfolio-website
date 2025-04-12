@@ -245,10 +245,10 @@ html {
     font-weight: 500;
   }
 
-  /* Horizontal scrollable nav bar */
+  /* Restore original transparent nav bar */
   header nav {
-    background-color: #f6f1e1;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    box-shadow: none;
   }
 
   header nav ul {
@@ -274,7 +274,6 @@ html {
   header nav ul li a {
     padding: 10px 14px;
     font-size: 1.1em;
-    background: #e3eaf0;
     border-radius: 20px;
     transition: background 0.3s ease;
   }
