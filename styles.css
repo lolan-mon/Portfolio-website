@@ -284,23 +284,30 @@ html {
 
   #about {
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 30px 10px; /* Less horizontal padding */
+    width: 100%; /* Use full width on small screens */
   }
-
+  
   .about-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
   }
-
+  
+  
   .about-text {
-    font-size: 1.3em;
-    line-height: 1.9;
-    padding: 10px 15px;
+    font-size: 0.95em; /* Slightly smaller font for more words per line */
+    line-height: 1.6;   /* Keeps good readability */
+    padding: 0 5px;     /* Less horizontal padding */
+    width: 100%;        /* Use full width */
+    max-width: 100%;
     color: #2C3E50;
     font-weight: 500;
+    text-align: center;   /* Align to left for easier reading */
   }
-
+  
   .about-image {
     display: flex;
     justify-content: center;
@@ -362,6 +369,14 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
   }
+
+    #about,
+    #projects,
+    #contact {
+    width: 95%;
+    margin: 0 auto;
+}
+
 }
 
 
