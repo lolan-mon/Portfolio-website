@@ -298,11 +298,11 @@ html {
   
   
   .about-text {
-    font-size: 0.95em; /* Slightly smaller font for more words per line */
-    line-height: 1.6;   /* Keeps good readability */
+    font-size: 1.5em; /* Slightly smaller font for more words per line */
+    line-height: 1.8;   /* Keeps good readability */
     padding: 0 5px;     /* Less horizontal padding */
     width: 100%;        /* Use full width */
-    max-width: 100%;
+    max-width: 260px;
     color: #2C3E50;
     font-weight: 500;
     text-align: center;   /* Align to left for easier reading */
